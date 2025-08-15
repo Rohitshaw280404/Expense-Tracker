@@ -1,0 +1,95 @@
+#head{
+    background-color: black;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  height: 100px;           /* Set a height so vertical centering works */
+                 
+}
+#head-text{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: blue;
+}
+.form-container {
+  max-width: 280px;   /* Width is adjustable acc to screen size , if we use width normally then it got fixed and will overflow on varing screen sizes */
+  margin: 20px auto; /* 20px from top and bottom and as width is adjustable so left and right margin is auto-adjustable */
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#second-heading{
+color: #4CAF50;
+text-decoration: underline;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+th {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+td {
+  font-size: 14px;
+}
+

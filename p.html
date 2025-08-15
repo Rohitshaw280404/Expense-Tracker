@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+    <link href="p.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+
+        <!--Navbar-->
+
+        <div id="head">
+          <h id="head-text"> Track your Personal Expense !!</h>
+        </div>
+
+        <!-- Basic Features -->
+         
+        <div class ="form-container" >
+            <h2 id="second-heading">Add your Expense here </h2> <br/>
+
+            <form id = "expense-form">
+          
+                <!--Date -->
+          
+           <label for="date">Date:</label>
+           <input type="date" id="date" required>  <!-- "type=date" will pop up a small calender and "required" make it necessary to be filled -->
+           
+           <!--Category -->
+
+           <label for="category">Category: </label>
+           <select id="category" required>
+            <option value="">--Select--</option>
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Other">Other</option>
+            </select>
+
+            <!-- Description-->
+
+            <label for="description"> Description:</label>
+            <input type="text" id="description" placeholder="e.g., movie" required>
+            
+            <!--Amount-->
+
+              <label for="amount">Amount (₹):</label>
+              <input type="number" id="amount" placeholder="Value in ruppes " min="1" required>
+           
+              <!-- Submit-->
+
+    <button type="submit">Add Expense</button>
+  </form>
+</div>
+        </div>
+<!--Table -->
+        <table border="1" style="margin: 20px auto; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody id="expense-table-body">
+    <!-- Expenses will appear here -->
+  </tbody>
+</table>
+
+  
+<script src="p.js"></script>
+</body>
+</html>
